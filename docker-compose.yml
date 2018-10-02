@@ -1,0 +1,30 @@
+version: '3'
+
+networks:
+  rf:
+    driver: bridge
+    ipam:
+      config:
+      -
+        subnet: 172.18.237.0/24
+services:
+  eureka:
+    container_name: eureka-app
+    user: root
+    build: 
+      context: ./eureka-service
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - ./eureka-service:/app/eureka-service
+    ports:
+      - "8761:8761"
+    expose:
+      - "8761"
+    tty: true
+    # dns: 192.168.110.2
+    networks:
+      - rf
+    environment: 
+      - COMPOSE_HTTP_TIMEOUT=200
+ 
