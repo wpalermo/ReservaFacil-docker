@@ -1,30 +1,72 @@
 version: '3'
 
+
 networks:
-  rf:
+  rf_network:
     driver: bridge
     ipam:
       config:
       -
-        subnet: 172.18.237.0/24
+        subnet: 172.18.233.0/24
+
+
 services:
   eureka:
     container_name: eureka-app
     user: root
     build: 
-      context: ./eureka-service
+      context: ./
       dockerfile: Dockerfile
     working_dir: /app
     volumes:
-      - ./eureka-service:/app/eureka-service
+      - ./eureka-service:/app
     ports:
       - "8761:8761"
     expose:
       - "8761"
     tty: true
-    # dns: 192.168.110.2
     networks:
-      - rf
-    environment: 
-      - COMPOSE_HTTP_TIMEOUT=200
+      - rf_network
+    command: mvn spring-boot:run
+
+  zuul:
+    container_name: zuul-gateway
+    user: root
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - ./zuul-gateway:/app
+    ports:
+      - "8090:8090"
+    expose:
+      - "8090"
+    tty: true
+    networks:
+      - rf_network
+    depends_on:
+      - eureka
+    command: mvn spring-boot:run
+  transferencia:
+    container_name: transferencia-app
+    user: root
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - ./transferencia-app:/app
+    ports:
+      - "8083:8083"
+    expose:
+      - "8083"
+    tty: true
+    networks:
+      - rf_network
+    depends_on:
+      - eureka
+    command: mvn spring-boot:run
+    
+
  
