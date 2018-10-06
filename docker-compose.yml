@@ -4,6 +4,10 @@ version: '3'
 networks:
   rf_test:
     driver: bridge
+    ipam:
+      config:
+      -
+        subnet: 192.168.1.0/25
 
 services:
   eureka:
@@ -40,8 +44,6 @@ services:
     tty: true
     networks:
       - rf_test
-    environment:
-      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka
     depends_on:
       - eureka
     command: mvn clean spring-boot:run
@@ -63,7 +65,7 @@ services:
       - rf_test
     depends_on:
       - eureka
-    command: mvn clean
+    command: mvn clean spring-boot:run
   taxa:
     container_name: taxa-app
     user: root
@@ -72,7 +74,7 @@ services:
       dockerfile: Dockerfile
     working_dir: /app
     volumes:
-      - ./taxa-app:/app
+      - ./taxas-app:/app
     ports:
       - "8082:8082"
     expose:
@@ -82,7 +84,7 @@ services:
       - rf_test
     depends_on:
       - eureka
-    command: mvn clean 
+    command: mvn clean spring-boot:run
     
     
 
