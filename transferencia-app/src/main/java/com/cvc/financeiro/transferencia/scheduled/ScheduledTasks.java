@@ -2,8 +2,9 @@ package com.cvc.financeiro.transferencia.scheduled;
 
 import java.time.LocalDate;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -13,7 +14,8 @@ import com.cvc.financeiro.transferencia.service.TransferenciaService;
 @Component
 public class ScheduledTasks {
 
-    private static final Logger log = LoggerFactory.getLogger(ScheduledTasks.class);
+    private static final Logger log = LogManager.getLogger(ScheduledTasks.class);
+
 
     @Autowired
     private TransferenciaService transferenciaService;

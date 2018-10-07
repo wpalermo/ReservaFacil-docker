@@ -1,10 +1,5 @@
 package com.cvc.financeiro.transferencia.histrixCommands;
 
-import org.apache.http.HttpException;
-import org.jboss.logging.Logger;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-
 import com.cvc.financeiro.transferencia.entities.Transferencia;
 import com.cvc.financeiro.transferencia.request.TaxaRequest;
 import com.cvc.financeiro.transferencia.resource.TaxaResource;
@@ -12,13 +7,13 @@ import com.cvc.financeiro.transferencia.response.TaxaResponse;
 import com.cvc.financeiro.transferencia.utils.StatusTransferenciaEnum;
 import com.netflix.hystrix.HystrixCommand;
 import com.netflix.hystrix.HystrixCommandGroupKey;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.http.ResponseEntity;
 
 public class TaxaHttpRequest extends HystrixCommand<Transferencia> {
 
-	private Logger logger = Logger.getLogger(this.getClass());
-	
-	
-
+	private Logger logger = LogManager.getLogger(this.getClass());
 
 	private TaxaResource taxaResource;
 	private TaxaRequest taxaRequest;

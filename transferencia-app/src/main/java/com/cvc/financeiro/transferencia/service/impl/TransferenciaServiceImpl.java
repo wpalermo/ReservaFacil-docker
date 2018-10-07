@@ -4,8 +4,9 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -33,7 +34,7 @@ public class TransferenciaServiceImpl implements TransferenciaService {
 	@Autowired
 	private TransferenciaRepository transferenciaRepository;
 	
-    private static final Logger log = LoggerFactory.getLogger(ScheduledTasks.class);
+    private static final Logger log = LogManager.getLogger(ScheduledTasks.class);
 
 
 	

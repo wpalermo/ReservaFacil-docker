@@ -1,33 +1,26 @@
 package com.cvc.financeiro.transferencia.controller;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.RequestEntity;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
-
 import com.cvc.financeiro.transferencia.exception.TaxaException;
 import com.cvc.financeiro.transferencia.exception.TransferenciaException;
 import com.cvc.financeiro.transferencia.request.TransferenciaRequest;
 import com.cvc.financeiro.transferencia.response.TransferenciaResponse;
 import com.cvc.financeiro.transferencia.service.TransferenciaService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.RequestEntity;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @CrossOrigin(origins = "*")
 @RequestMapping("/transferencia")
 public class TransferenciaController {
 
-	protected final Logger log = LoggerFactory.getLogger(this.getClass());
+	protected final Logger log = LogManager.getLogger(this.getClass());
+
 
 	@Autowired
 	private TransferenciaService transferenciaService;
