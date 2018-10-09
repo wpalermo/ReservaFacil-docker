@@ -38,9 +38,9 @@ services:
     volumes:
       - ./zuul-gateway:/app
     ports:
-      - "8090:8090"
+      - "9090:9090"
     expose:
-      - "8090"
+      - "9090"
     tty: true
     networks:
       - rf_test

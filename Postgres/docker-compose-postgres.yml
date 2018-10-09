@@ -1,0 +1,22 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+
+
+networks:
+  rf_test:
+    driver: bridge
+    ipam:
+      config:
+      -
+        subnet: 192.168.1.0/25
+
+services:
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: root
+    ports:
+      - 5433:5432

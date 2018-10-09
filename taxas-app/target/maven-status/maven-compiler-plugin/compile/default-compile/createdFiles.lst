@@ -1,5 +1,5 @@
-br/com/cvc/taxas/response/TaxaResponse.class
 br/com/cvc/taxas/utils/TransaferenciaUtils.class
+br/com/cvc/taxas/response/TaxaResponse.class
 br/com/cvc/taxas/exception/TaxaException.class
 br/com/cvc/taxas/request/TaxaRequest.class
 br/com/cvc/taxas/service/TaxaService.class

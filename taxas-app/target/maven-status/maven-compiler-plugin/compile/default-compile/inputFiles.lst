@@ -1,5 +1,5 @@
-/app/src/main/java/br/com/cvc/taxas/exception/TaxaException.java
 /app/src/main/java/br/com/cvc/taxas/service/TaxaService.java
+/app/src/main/java/br/com/cvc/taxas/exception/TaxaException.java
 /app/src/main/java/br/com/cvc/taxas/utils/TransaferenciaUtils.java
 /app/src/main/java/br/com/cvc/taxas/TaxaApplication.java
 /app/src/main/java/br/com/cvc/taxas/controller/TaxaController.java

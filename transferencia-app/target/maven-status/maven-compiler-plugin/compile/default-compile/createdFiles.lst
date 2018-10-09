@@ -1,5 +1,5 @@
-com/cvc/financeiro/transferencia/controller/ContaController.class
 com/cvc/financeiro/transferencia/histrixCommands/TaxaHttpRequest.class
+com/cvc/financeiro/transferencia/controller/ContaController.class
 com/cvc/financeiro/transferencia/resource/TaxaResource.class
 com/cvc/financeiro/transferencia/service/ContaService.class
 com/cvc/financeiro/transferencia/DataLoader.class
