@@ -1,10 +1,8 @@
 # Use postgres/example user/password credentials
 version: '3.1'
 
-
-
 networks:
-  rf_test:
+  rf_net:
     driver: bridge
     ipam:
       config:
@@ -12,11 +10,14 @@ networks:
         subnet: 192.168.1.0/25
 
 services:
-
-  db:
+  dbTransferencia:
+    container_name: db-transferencia
     image: postgres
     environment:
       POSTGRES_PASSWORD: root
       POSTGRES_USER: root
     ports:
       - 5433:5432
+    networks:
+      - rf_net
+
