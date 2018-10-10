@@ -1,3 +1,4 @@
+/app/src/main/java/com/cvc/financeiro/transferencia/aspect/LoggerAspect.java
 /app/src/main/java/com/cvc/financeiro/transferencia/service/TransferenciaService.java
 /app/src/main/java/com/cvc/financeiro/transferencia/utils/StatusTransferenciaEnum.java
 /app/src/main/java/com/cvc/financeiro/transferencia/repository/ContaRepository.java
@@ -20,6 +21,7 @@
 /app/src/main/java/com/cvc/financeiro/transferencia/service/TaxaService.java
 /app/src/main/java/com/cvc/financeiro/transferencia/histrixCommands/TaxaHttpRequest.java
 /app/src/main/java/com/cvc/financeiro/transferencia/service/impl/TransferenciaServiceImpl.java
+/app/src/main/java/com/cvc/financeiro/transferencia/aspect/LogThis.java
 /app/src/main/java/com/cvc/financeiro/transferencia/repository/TransferenciaRepository.java
 /app/src/main/java/com/cvc/financeiro/transferencia/service/ContaService.java
 /app/src/main/java/com/cvc/financeiro/transferencia/entities/Transferencia.java

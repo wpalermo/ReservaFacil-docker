@@ -3,6 +3,7 @@ package com.cvc.financeiro.transferencia.service.impl;
 import java.util.Arrays;
 import java.util.List;
 
+import com.cvc.financeiro.transferencia.aspect.LogThis;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,7 @@ public class ContaServiceImpl implements ContaService {
 	private ContaRepository contaRepository;
 
 	@Override
+	@LogThis
 	public Conta buscarConta(String conta) {
 		return contaRepository.findById(conta).get();
 	}

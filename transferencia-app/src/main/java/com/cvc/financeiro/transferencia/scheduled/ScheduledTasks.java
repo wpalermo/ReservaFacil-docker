@@ -2,7 +2,7 @@ package com.cvc.financeiro.transferencia.scheduled;
 
 import java.time.LocalDate;
 
-
+import com.cvc.financeiro.transferencia.aspect.LogThis;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +24,7 @@ public class ScheduledTasks {
      * Roda o metodo realizaTransferencia agendado para rodar de 1 em 1 minuto
      */
     @Scheduled(cron = "1 * * * * *")
+    @LogThis
     public void realizaTransaferencia() {
     	log.info("Iniciando tarfefa agendada - REALIZAR TRANSFERENCIA {} ", LocalDate.now());
         transferenciaService.realizarTransferencia();
@@ -32,6 +33,7 @@ public class ScheduledTasks {
     
     
     @Scheduled(cron = "1 * * * * *")
+    @LogThis
     public void atualizaTaxa() {
     	log.info("Iniciando tarfefa agendada - BUSCA DE TAXA {} ", LocalDate.now());
     	transferenciaService.recalcularTaxas();

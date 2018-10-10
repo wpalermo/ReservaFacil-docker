@@ -57,7 +57,8 @@ public class TransferenciaServiceImpl implements TransferenciaService {
 			
 			log.info("Inciando transferencia");
 			log.info("De " + transferencia.getContaOrigem()  + " para " + transferencia.getContaDestino());
-			
+			log.info("Valor: " + transferencia.getValor());
+
 			// Valida se contas existem na base.
 			if (!contaService.isValida(transferencia.getContaDestino())) {
 				this.atualizarStatus(transferencia, StatusTransferenciaEnum.CONTA_DESTINO_INVALIDA);

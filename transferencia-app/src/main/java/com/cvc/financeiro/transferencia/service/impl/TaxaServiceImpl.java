@@ -20,7 +20,8 @@ public class TaxaServiceImpl implements TaxaService {
 	
     private static final Logger log = LogManager.getLogger(ScheduledTasks.class);
 
-	
+
+    	@SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
 	@Autowired
 	private TaxaResource taxaResource;
 	
