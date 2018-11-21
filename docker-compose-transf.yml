@@ -1,0 +1,22 @@
+version: '3'
+
+
+networks:
+  rf_net:
+    driver: bridge
+    ipam:
+      config:
+      -
+        subnet: 192.168.1.0/25
+
+services:
+  eureka:
+    container_name: rf_eureka
+    user: root
+    volumes:
+      - /william/home/.m2/repository:/root/.m2/repository
+    build:
+      context: ./
+      dockerfile: ./eureka-service/Dockerfile
+    image: reservafacil/eureka
+    command: mvn spring-boot:run
