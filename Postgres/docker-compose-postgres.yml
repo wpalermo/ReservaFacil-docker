@@ -7,7 +7,7 @@ networks:
     ipam:
       config:
       -
-        subnet: 192.168.1.0/25
+        subnet: 192.168.2.0/25
 
 services:
   dbTransferencia:
@@ -17,7 +17,7 @@ services:
       POSTGRES_PASSWORD: root
       POSTGRES_USER: root
     ports:
-      - 5433:5432
+      - 5432:5432
     networks:
-      - rf_net
+      - rf_net 
 

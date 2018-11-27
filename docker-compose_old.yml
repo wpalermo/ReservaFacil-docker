@@ -1,0 +1,93 @@
+version: '3'
+
+
+networks:
+  rf_net:
+    driver: bridge
+    ipam:
+      config:
+      -
+        subnet: 192.168.1.0/25
+
+services:
+  eureka:
+    container_name: eureka-server
+    user: root
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - ./eureka-service:/app
+    ports:
+      - "8761:8761"
+    expose:
+      - "8761"
+    tty: true
+    networks:
+      - rf_net
+    command:  mvn clean spring-boot:run
+
+  zuul:
+    container_name: zuul-gateway
+    user: root
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - ./zuul-gateway:/app
+    ports:
+      - "9090:9090"
+    expose:
+      - "9090"
+    tty: true
+    networks:
+      - rf_net
+    depends_on:
+      - eureka
+    command: mvn clean spring-boot:run
+
+  transferencia:
+    container_name: transferencia-app
+    user: root
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - ./transferencia-app:/app
+    ports:
+      - "8083:8083"
+    expose:
+      - "8083"
+    tty: true
+    networks:
+      - rf_net
+    depends_on:
+      - eureka
+    command: mvn clean spring-boot:run
+
+  taxa:
+    container_name: taxa-app
+    user: root
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - ./taxas-app:/app
+    ports:
+      - "8082:8082"
+    expose:
+      - "8082"
+    tty: true
+    networks:
+      - rf_net
+    depends_on:
+      - eureka
+    command: mvn clean spring-boot:run
+    
+    
+
+ 

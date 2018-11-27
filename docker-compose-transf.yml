@@ -12,11 +12,9 @@ networks:
 services:
   eureka:
     container_name: rf_eureka
-    user: root
-    volumes:
-      - /william/home/.m2/repository:/root/.m2/repository
-    build:
-      context: ./
-      dockerfile: ./eureka-service/Dockerfile
     image: reservafacil/eureka
-    command: mvn spring-boot:run
+    ports:
+      - "8761:8761"
+    command: java -jar eureka-service-0.0.1-SNAPSHOT.jar
+    networks:
+      - rf_net

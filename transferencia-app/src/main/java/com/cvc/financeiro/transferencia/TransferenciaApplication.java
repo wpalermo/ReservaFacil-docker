@@ -20,7 +20,6 @@ public class TransferenciaApplication
     public static void main(String[] args) {
 
 
-        System.out.println("afe " + TransferenciaApplication.class.getCanonicalName());
         SpringApplication.run(TransferenciaApplication.class, args);
 
 
