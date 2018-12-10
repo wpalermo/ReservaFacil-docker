@@ -24,7 +24,7 @@ import com.cvc.financeiro.transferencia.utils.StatusTransferenciaEnum;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.DEFINED_PORT)
-public class TransferenciaServiceTest {
+public class 	TransferenciaServiceTest {
 
 	private RestTemplate restTemplate;
 

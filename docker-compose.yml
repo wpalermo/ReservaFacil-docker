@@ -21,16 +21,27 @@ services:
     tty: true
     networks:
       - rf_net_local
-  eureka:
-    container_name: rf_eureka
-    image: reservafacil/eureka
-    hostname: eureka
+  consul:
+    container_name: consul
+    image: consul
+    hostname: consul
     ports:
-      - "8761:8761"
+      - "8500:8500"
     expose:
-      - "8671"
+      - "8500"
     tty: true
-    command: java -jar eureka-service-0.0.1-SNAPSHOT.jar
+    networks:
+      - rf_net_local
+  taxa:
+    container_name: rf_taxa
+    image: reservafacil/taxa
+    hostname: taxa
+    ports:
+      - "8082:8082"
+    expose:
+      - "8082"
+    tty: true
+    command: java -jar taxa-app-0.0.1-SNAPSHOT.jar
     networks:
       - rf_net_local
 
