@@ -6,16 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="reserva-facil" />
+        <module name="transferencia-app" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="reserva-facil" target="8" />
+      <module name="transferencia-app" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="reserva-facil" options="-parameters" />
+      <module name="transferencia-app" options="-parameters" />
     </option>
   </component>
 </project>
