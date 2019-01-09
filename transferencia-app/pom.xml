@@ -16,6 +16,34 @@
 		<java.version>8</java.version>
 	</properties>
 
+
+	<profiles>
+		<profile>
+			<id>local</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<resources>
+					<resource>
+						<directory>src/main/resources/local</directory>
+					</resource>
+				</resources>
+			</build>
+		</profile>
+		<profile>
+			<id>docker</id>
+			<build>
+				<resources>
+					<resource>
+						<directory>src/main/resources/docker</directory>
+					</resource>
+				</resources>
+			</build>
+		</profile>
+	</profiles>
+
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

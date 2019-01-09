@@ -2,6 +2,7 @@
 /home/william/dev/repository/me/ReservaFacil-docker/taxas-app/src/main/java/br/com/cvc/taxas/TaxaApplication.java
 /home/william/dev/repository/me/ReservaFacil-docker/taxas-app/src/main/java/br/com/cvc/taxas/response/TaxaResponse.java
 /home/william/dev/repository/me/ReservaFacil-docker/taxas-app/src/main/java/br/com/cvc/taxas/exception/TaxaException.java
+/home/william/dev/repository/me/ReservaFacil-docker/taxas-app/src/main/java/br/com/cvc/taxas/constants/PriceConstants.java
 /home/william/dev/repository/me/ReservaFacil-docker/taxas-app/src/main/java/br/com/cvc/taxas/service/impl/TaxaServiceImpl.java
 /home/william/dev/repository/me/ReservaFacil-docker/taxas-app/src/main/java/br/com/cvc/taxas/service/TaxaService.java
 /home/william/dev/repository/me/ReservaFacil-docker/taxas-app/src/main/java/br/com/cvc/taxas/controller/TaxaController.java

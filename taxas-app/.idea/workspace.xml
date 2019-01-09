@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6049322-0aec-4fcd-b99c-82f944f59a90" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../transferencia-app/src/main/resources/docker/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../transferencia-app/src/main/resources/docker/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../transferencia-app/src/main/resources/docker/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../transferencia-app/src/main/resources/local/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../transferencia-app/src/main/resources/local/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../transferencia-app/src/main/resources/local/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pods/resources/rf-pod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../pods/resources/rf-pod.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transferencia-app/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../transferencia-app/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transferencia-app/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../transferencia-app/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../transferencia-app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../transferencia-app/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transferencia-app/reserva-facil.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transferencia-app/src/main/java/com/cvc/financeiro/transferencia/aspect/LoggerAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../transferencia-app/src/main/java/com/cvc/financeiro/transferencia/aspect/LoggerAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transferencia-app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../transferencia-app/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transferencia-app/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../transferencia-app/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transferencia-app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../transferencia-app/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transferencia-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../transferencia-app/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,20 +54,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+              <caret line="3" column="38" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="18" />
+              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -145,8 +152,8 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/cvc/taxas/TaxaApplication.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/cvc/taxas/constants/PriceConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/bootstrap.yml" />
       </list>
     </option>
   </component>
@@ -157,7 +164,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="7" />
     <option name="width" value="1270" />
     <option name="height" value="1022" />
@@ -394,12 +401,12 @@
       <workItem from="1545825140167" duration="2955000" />
       <workItem from="1546429035846" duration="599000" />
       <workItem from="1546445714386" duration="1998000" />
-      <workItem from="1547040054503" duration="426000" />
+      <workItem from="1547040054503" duration="2132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45130000" />
+    <option name="totallyTimeSpent" value="46836000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,7 +418,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1920" height="1053" extended-state="7" />
+    <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28228387" />
@@ -544,17 +551,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="18" />
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="38" />
         </state>
       </provider>
     </entry>

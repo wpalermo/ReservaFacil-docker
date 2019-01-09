@@ -43,7 +43,6 @@ services:
     expose:
       - "8082"
     tty: true
-    command: java -jar taxa-app-0.0.1-SNAPSHOT.jar
     networks:
       - rf_net_local
   transferencia:
