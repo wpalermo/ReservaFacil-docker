@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rf-deployment-taxa
+  labels:
+    app: reserva-facil
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rf-taxa
+  template:
+    metadata:
+      labels:
+        app: rf-taxa
+    spec:
+      containers:
+      - name: taxa
+        image: reservafacil/taxa
+        ports:
+        - containerPort: 8082

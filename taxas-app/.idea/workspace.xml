@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6049322-0aec-4fcd-b99c-82f944f59a90" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../transferencia-app/src/main/resources/docker/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../transferencia-app/src/main/resources/docker/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../transferencia-app/src/main/resources/docker/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../transferencia-app/src/main/resources/local/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../transferencia-app/src/main/resources/local/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../transferencia-app/src/main/resources/local/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pods/resources/rf-pod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../pods/resources/rf-pod.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../transferencia-app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../transferencia-app/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transferencia-app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../transferencia-app/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transferencia-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../transferencia-app/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="38" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="38" />
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -401,12 +388,12 @@
       <workItem from="1545825140167" duration="2955000" />
       <workItem from="1546429035846" duration="599000" />
       <workItem from="1546445714386" duration="1998000" />
-      <workItem from="1547040054503" duration="2132000" />
+      <workItem from="1547040054503" duration="3622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46836000" />
+    <option name="totallyTimeSpent" value="48326000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -560,8 +547,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="38" />
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
