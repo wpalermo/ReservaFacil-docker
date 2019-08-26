@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="transferencia-app" target="8" />
+      <module name="transferencia-app" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

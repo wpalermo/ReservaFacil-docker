@@ -18,10 +18,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class TransferenciaApplication
 {
     public static void main(String[] args) {
-
-
         SpringApplication.run(TransferenciaApplication.class, args);
-
-
     }
 }

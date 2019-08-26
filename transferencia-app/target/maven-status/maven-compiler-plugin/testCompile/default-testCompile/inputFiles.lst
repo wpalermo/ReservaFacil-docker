@@ -1,4 +1,4 @@
-/home/william/dev/repository/me/ReservaFacil-docker/transferencia-app/src/test/java/com/cvc/financeiro/transferencia/service/TaxaServiceTest.java
-/home/william/dev/repository/me/ReservaFacil-docker/transferencia-app/src/test/java/com/cvc/financeiro/transferencia/service/TransferenciaServiceTest.java
-/home/william/dev/repository/me/ReservaFacil-docker/transferencia-app/src/test/java/com/cvc/financeiro/transferencia/resource/TaxaResourceTest.java
-/home/william/dev/repository/me/ReservaFacil-docker/transferencia-app/src/test/java/com/cvc/financeiro/transferencia/controller/TransferenciaControllerTest.java
+/Users/wpalermo/projects/me/ReservaFacil-docker/transferencia-app/src/test/java/com/cvc/financeiro/transferencia/resource/TaxaResourceTest.java
+/Users/wpalermo/projects/me/ReservaFacil-docker/transferencia-app/src/test/java/com/cvc/financeiro/transferencia/service/TransferenciaServiceTest.java
+/Users/wpalermo/projects/me/ReservaFacil-docker/transferencia-app/src/test/java/com/cvc/financeiro/transferencia/service/TaxaServiceTest.java
+/Users/wpalermo/projects/me/ReservaFacil-docker/transferencia-app/src/test/java/com/cvc/financeiro/transferencia/controller/TransferenciaControllerTest.java

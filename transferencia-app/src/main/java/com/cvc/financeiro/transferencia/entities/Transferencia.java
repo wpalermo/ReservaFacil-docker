@@ -2,17 +2,18 @@ package com.cvc.financeiro.transferencia.entities;
 
 import java.time.LocalDate;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 import com.cvc.financeiro.transferencia.utils.StatusTransferenciaEnum;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
 public class Transferencia {
-	
+
+    enum TipoTransacaoEnum {
+        CREDITO, DEBITO;
+    }
+
 	@Id
 	@GeneratedValue
 	private Integer id;
@@ -28,6 +29,10 @@ public class Transferencia {
 	
 	@Column
 	private Float taxa;
+
+	@Column
+    @Enumerated(value = EnumType.STRING)
+	private TipoTransacaoEnum tipoTransacao;
 	
 	@Column
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy", locale = "pt-BR", timezone = "Brazil/East")
@@ -80,7 +85,15 @@ public class Transferencia {
 		this.taxa = taxa;
 	}
 
-	public LocalDate getDataTransferencia() {
+    public TipoTransacaoEnum getTipoTransacao() {
+        return tipoTransacao;
+    }
+
+    public void setTipoTransacao(TipoTransacaoEnum tipoTransacao) {
+        this.tipoTransacao = tipoTransacao;
+    }
+
+    public LocalDate getDataTransferencia() {
 		return dataTransferencia;
 	}
 

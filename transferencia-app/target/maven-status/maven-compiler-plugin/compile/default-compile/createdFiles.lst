@@ -1,5 +1,5 @@
-com/cvc/financeiro/transferencia/controller/ContaController.class
 com/cvc/financeiro/transferencia/histrixCommands/TaxaHttpRequest.class
+com/cvc/financeiro/transferencia/controller/ContaController.class
 com/cvc/financeiro/transferencia/resource/TaxaResource.class
 com/cvc/financeiro/transferencia/service/ContaService.class
 com/cvc/financeiro/transferencia/DataLoader.class
@@ -11,8 +11,8 @@ com/cvc/financeiro/transferencia/service/TaxaService.class
 com/cvc/financeiro/transferencia/request/TransferenciaRequest.class
 com/cvc/financeiro/transferencia/service/TransferenciaService.class
 com/cvc/financeiro/transferencia/repository/TransferenciaRepository.class
-com/cvc/financeiro/transferencia/service/impl/TaxaServiceImpl.class
 com/cvc/financeiro/transferencia/aspect/LoggerAspect.class
+com/cvc/financeiro/transferencia/service/impl/TaxaServiceImpl.class
 com/cvc/financeiro/transferencia/exception/TaxaException.class
 com/cvc/financeiro/transferencia/response/TaxaResponse.class
 com/cvc/financeiro/transferencia/aspect/LogThis.class
