@@ -3,6 +3,7 @@ package com.cvc.financeiro.transferencia.entities;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 
 @Entity
 public class Conta {
@@ -10,9 +11,9 @@ public class Conta {
 	@Id
 	@Column
 	private String conta;
-	
-	@Column
-	private String nomeCliente;
+
+	@JoinColumn(name = "USER_ID")
+	private User user;
 	
 	@Column
 	private Float saldo;
@@ -24,20 +25,18 @@ public class Conta {
 	public void setConta(String conta) {
 		this.conta = conta;
 	}
-	public String getNomeCliente() {
-		return nomeCliente;
-	}
-	public void setNomeCliente(String nomeCliente) {
-		this.nomeCliente = nomeCliente;
-	}
 	public Float getSaldo() {
 		return saldo;
 	}
 	public void setSaldo(Float saldo) {
 		this.saldo = saldo;
 	}
-	
-	
-	
 
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
 }

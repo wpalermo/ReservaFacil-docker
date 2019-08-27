@@ -33,11 +33,9 @@ public class ContaController {
 	@ResponseStatus(value = HttpStatus.OK)
 	@ResponseBody
 	public ResponseEntity<TransferenciaResponse> post(RequestEntity<Conta> request) {
-
 		try {
 			contaService.cadastraConta(request.getBody());
 			return new ResponseEntity<>(HttpStatus.OK);
-
 		} catch (TaxaException | TransferenciaException te) {
 			return new ResponseEntity<>(new TransferenciaResponse(te.getMessage()), HttpStatus.EXPECTATION_FAILED);
 		} 
@@ -48,10 +46,8 @@ public class ContaController {
 	@ResponseStatus(value = HttpStatus.OK)
 	@ResponseBody
 	public ResponseEntity<List<Conta>> get() {
-
 		try {
 			return new ResponseEntity<>(contaService.buscarTodasContas(), HttpStatus.OK);
-
 		} catch (TaxaException | TransferenciaException te) {
 			return new ResponseEntity<>(HttpStatus.EXPECTATION_FAILED);
 		} 

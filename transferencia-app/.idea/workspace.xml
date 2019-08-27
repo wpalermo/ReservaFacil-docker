@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c6aa4a7-c713-471c-8d31-969f693278ee" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="b4b3b067-5ad5-4e32-8612-15e76c1882a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/request/LoginRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/request/UserRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/response/UserResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/service/dto/UserDataDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Postgres/docker-compose-postgres.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Postgres/docker-compose-postgres.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/controller/ContaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/controller/ContaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/entities/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/entities/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,54 +28,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/reserva_facil$TransferenciaControllerTest.ic" NAME="TransferenciaControllerTest Coverage Results" MODIFIED="1544099864647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.cvc.financeiro.transferencia.controller.*</FILTER>
-    </SUITE>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
-        <option value="Aspect" />
-        <option value="AnnotationType" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-    <option name="disabledProfiles">
-      <list>
-        <option value="local" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectId" id="1PwS6phwHW93YgJ14QEZg7FwTTd" />
+  <component name="ProjectId" id="1PzKKTLGJNE7psSTJaQAZ9Uk9dL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547058798269" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/docker" />
-      <recent name="$PROJECT_DIR$/src/main/resources/local" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-    </key>
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -71,11 +53,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TransferenciaApplication">
+  <component name="RunManager">
     <configuration name="TransferenciaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cvc.financeiro.transferencia.TransferenciaApplication" />
       <module name="transferencia-app" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cvc.financeiro.transferencia.*" />
@@ -86,73 +67,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransferenciaControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="transferencia-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cvc.financeiro.transferencia.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cvc.financeiro.transferencia.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.cvc.financeiro.transferencia.controller.TransferenciaControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Debug" type="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="8083" />
-      <option name="AUTO_RESTART" value="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="8083" />
-        <option name="LOCAL" value="false" />
-      </RunnerSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="TransferenciaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="transferencia-app" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cvc.financeiro.transferencia.TransferenciaApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.TransferenciaApplication" />
-      <item itemvalue="JUnit.TransferenciaControllerTest" />
-      <item itemvalue="Remote.Debug" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TransferenciaApplication" />
-        <item itemvalue="JUnit.TransferenciaControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -161,40 +78,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8c6aa4a7-c713-471c-8d31-969f693278ee" name="Default" comment="" />
-      <created>1538847103989</created>
+      <changelist id="b4b3b067-5ad5-4e32-8612-15e76c1882a8" name="Default Changelist" comment="" />
+      <created>1566871420418</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1538847103989</updated>
-      <workItem from="1539117160996" duration="9351000" />
-      <workItem from="1542833057449" duration="109000" />
-      <workItem from="1542890392611" duration="640000" />
-      <workItem from="1542896233824" duration="936000" />
-      <workItem from="1542901728368" duration="468000" />
-      <workItem from="1542912820415" duration="2405000" />
-      <workItem from="1542917008722" duration="9875000" />
-      <workItem from="1543934416440" duration="16647000" />
-      <workItem from="1544473911368" duration="8735000" />
-      <workItem from="1544820505535" duration="599000" />
-      <workItem from="1545065222150" duration="4769000" />
-      <workItem from="1545825137825" duration="1198000" />
-      <workItem from="1546429032921" duration="1198000" />
-      <workItem from="1546445711023" duration="1796000" />
-      <workItem from="1546973432826" duration="1773000" />
-      <workItem from="1547038737427" duration="2963000" />
+      <updated>1566871420418</updated>
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="TransferenciaControllerTest - 2018.12.06 at 10h 37m 59s.xml">
-      <configuration name="TransferenciaControllerTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65867000" />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -206,26 +96,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/aspect/LoggerAspect.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/scheduled/ScheduledTasks.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/entities/Transferencia.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
