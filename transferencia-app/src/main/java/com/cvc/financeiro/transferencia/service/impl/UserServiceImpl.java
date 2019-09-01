@@ -5,31 +5,26 @@ import com.cvc.financeiro.transferencia.repository.UserRepository;
 import com.cvc.financeiro.transferencia.service.UserService;
 import com.cvc.financeiro.transferencia.service.dto.UserDataDTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.crypto.password.StandardPasswordEncoder;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UserServiceImpl implements UserService {
-
-    @Autowired
-    private PasswordEncoder passwordEncoder;
 
     @Autowired
     private UserRepository userRepository;
 
     @Override
     public User createUser(UserDataDTO userData) {
+        PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
 
         User user = User.builder()
-                .setCpf(userData.getCpf())
                 .setEmail(userData.getEmail())
-                .setNome(userData.getNome())
-                .setSobrenome(userData.getSobrenome())
-                .setSenha(passwordEncoder.encode(userData.getSenha()))
+                .setPassword(encoder.encode(userData.getPassword()))
                 .build();
 
-        user = userRepository.save(user);
-
-        return user;
+        return userRepository.save(user);
     }
 
 

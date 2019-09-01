@@ -32,9 +32,9 @@ public class ContaController {
 	@RequestMapping(method = RequestMethod.POST)
 	@ResponseStatus(value = HttpStatus.OK)
 	@ResponseBody
-	public ResponseEntity<TransferenciaResponse> post(RequestEntity<Conta> request) {
+	public ResponseEntity<TransferenciaResponse> post(Conta request) {
 		try {
-			contaService.cadastraConta(request.getBody());
+			contaService.cadastraConta(request);
 			return new ResponseEntity<>(HttpStatus.OK);
 		} catch (TaxaException | TransferenciaException te) {
 			return new ResponseEntity<>(new TransferenciaResponse(te.getMessage()), HttpStatus.EXPECTATION_FAILED);

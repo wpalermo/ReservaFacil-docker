@@ -8,20 +8,18 @@ import com.cvc.financeiro.transferencia.response.TransferenciaResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
+@Controller
+@CrossOrigin(origins = "*")
+@RequestMapping("/login")
 public class LoginController {
-
-
-
 
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.OK)
     @ResponseBody
-    public ResponseEntity<TransferenciaResponse> post(RequestEntity<LoginRequestDTO> request) {
+    public ResponseEntity<TransferenciaResponse> post(LoginRequestDTO request) {
         try {
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (TaxaException | TransferenciaException te) {

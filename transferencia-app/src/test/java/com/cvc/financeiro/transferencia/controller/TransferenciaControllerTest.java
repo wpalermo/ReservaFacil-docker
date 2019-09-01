@@ -69,8 +69,7 @@ public class TransferenciaControllerTest {
 
 		Mockito.doNothing().when(transferenciaService).agendarTransferencia(transferencia);
 
-		ResponseEntity<TransferenciaResponse> response = controller.post(
-				new RequestEntity<TransferenciaRequest>(transferenciaRequest, HttpMethod.POST, new URI(BASE_PATH)));
+		ResponseEntity<TransferenciaResponse> response = controller.post(transferenciaRequest);
 
 		Assert.assertEquals(HttpStatus.OK, response.getStatusCode());
 
@@ -92,8 +91,7 @@ public class TransferenciaControllerTest {
 
 		Mockito.doThrow(TaxaException.class).when(transferenciaService).agendarTransferencia(transferencia);
 
-		ResponseEntity<TransferenciaResponse> response = controller.post(
-				new RequestEntity<TransferenciaRequest>(transferenciaRequest, HttpMethod.POST, new URI(BASE_PATH)));
+		ResponseEntity<TransferenciaResponse> response = controller.post(transferenciaRequest);
 
 		Assert.assertEquals(HttpStatus.EXPECTATION_FAILED, response.getStatusCode());
 

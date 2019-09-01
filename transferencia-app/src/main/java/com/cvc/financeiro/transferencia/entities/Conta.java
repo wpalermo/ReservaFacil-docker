@@ -1,17 +1,18 @@
 package com.cvc.financeiro.transferencia.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
+import javax.persistence.*;
 
 @Entity
 public class Conta {
-	
+
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
 	@Column
 	private String conta;
 
+	@ManyToOne
 	@JoinColumn(name = "USER_ID")
 	private User user;
 	

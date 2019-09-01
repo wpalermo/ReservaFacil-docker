@@ -115,12 +115,12 @@ public class 	TransferenciaServiceTest {
 		
 		Conta conta1 = new Conta();
 		conta1.setConta("1000");
-		conta1.setNomeCliente("Tony Stark");
+//		conta1.setNomeCliente("Tony Stark");
 		conta1.setSaldo(1000000000f);
-		
+
 		Conta conta2 = new Conta();
 		conta2.setConta("1001");
-		conta2.setNomeCliente("Peter Parker");
+//		conta2.setNomeCliente("Peter Parker");
 		conta2.setSaldo(100f);
 		
 		

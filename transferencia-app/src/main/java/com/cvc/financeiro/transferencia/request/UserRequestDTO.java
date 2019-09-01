@@ -18,11 +18,11 @@ public class UserRequestDTO {
     public UserDataDTO toData(){
         UserDataDTO data = new UserDataDTO();
 
-        data.setNome(this.nome);
-        data.setSobrenome(this.sobrenome);
-        data.setCpf(this.cpf);
+        data.setName(this.nome);
+        data.setSecondName(this.sobrenome);
+        data.setDocumentNumber(this.cpf);
         data.setEmail(this.email);
-        data.setSenha(this.senha);
+        data.setPassword(this.senha);
 
         return data;
     }

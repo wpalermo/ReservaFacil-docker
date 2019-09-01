@@ -19,17 +19,22 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/user")
 public class UserController {
 
-
     @Autowired
     private UserService userService;
 
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.OK)
     @ResponseBody
-    public ResponseEntity<UserResponseDTO> post(RequestEntity<UserRequestDTO> request) {
-        this.userService.createUser(request.getBody().toData());
-        
+    public ResponseEntity<UserResponseDTO> post(@RequestBody UserRequestDTO request) {
+        this.userService.createUser(request.toData());
+        return null;
+    }
 
+    @RequestMapping(value = "/new", method = RequestMethod.POST)
+    @ResponseStatus(value = HttpStatus.OK)
+    @ResponseBody
+    public ResponseEntity<UserResponseDTO> newUser(@RequestBody UserRequestDTO request) {
+        this.userService.createUser(request.toData());
         return null;
     }
 

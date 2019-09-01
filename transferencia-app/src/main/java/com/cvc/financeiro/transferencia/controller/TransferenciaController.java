@@ -41,18 +41,18 @@ public class TransferenciaController {
 	@RequestMapping(method = RequestMethod.PUT, path = "/{id}")
 	@ResponseStatus(value = HttpStatus.OK)
 	@ResponseBody
-	public ResponseEntity<TransferenciaResponse> put(Integer id, RequestEntity<TransferenciaRequest> request) {
+	public ResponseEntity<TransferenciaResponse> put(Integer id, TransferenciaRequest request) {
 		return null;
 	}
 
 	@RequestMapping(method = RequestMethod.POST)
 	@ResponseStatus(value = HttpStatus.OK)
 	@ResponseBody
-	public ResponseEntity<TransferenciaResponse> post(RequestEntity<TransferenciaRequest> request) {
+	public ResponseEntity<TransferenciaResponse> post(TransferenciaRequest request) {
 
 		try {
-			transferenciaService.agendarTransferencia(request.getBody().getTransferencia());
-			log.info("Operacao POST realizada com sucesso - conta origem: " + request.getBody().getTransferencia().getContaOrigem());
+			transferenciaService.agendarTransferencia(request.getTransferencia());
+			log.info("Operacao POST realizada com sucesso - conta origem: " + request.getTransferencia().getContaOrigem());
 			return new ResponseEntity<>(HttpStatus.OK);
 
 		} catch (TaxaException | TransferenciaException te) {

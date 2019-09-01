@@ -1,6 +1,7 @@
 package com.cvc.financeiro.transferencia.entities;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -8,33 +9,25 @@ public class User {
 
     @Id
     @GeneratedValue
-    private String id;
+    private Long id;
 
     @Column
     private String uuid;
 
     @Column
-    private String nome;
+    private String name;
 
     @Column
-    private String sobrenome;
+    private String secondName;
 
     @Column
-    private String cpf;
+    private String documentNumber;
 
     @Column
     private String email;
 
     @Column
-    private String senha;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
+    private String password;
 
     public String getUuid() {
         return uuid;
@@ -44,28 +37,28 @@ public class User {
         this.uuid = uuid;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getSobrenome() {
-        return sobrenome;
+    public String getSecondName() {
+        return secondName;
     }
 
-    public void setSobrenome(String sobrenome) {
-        this.sobrenome = sobrenome;
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getDocumentNumber() {
+        return documentNumber;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setDocumentNumber(String documentNumber) {
+        this.documentNumber = documentNumber;
     }
 
     public String getEmail() {
@@ -76,12 +69,12 @@ public class User {
         this.email = email;
     }
 
-    public String getSenha() {
-        return senha;
+    public String getPassword() {
+        return password;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Transient
@@ -98,13 +91,13 @@ public class User {
             user.setUuid(UUID.randomUUID().toString());
         }
 
-        public UserBuilder setNome(String nome){
-            this.user.setNome(nome);
+        public UserBuilder setName(String nome){
+            this.user.setName(nome);
             return this;
         }
 
-        public UserBuilder setSobrenome(String sobrenome){
-            this.user.setSobrenome(sobrenome);
+        public UserBuilder setSecondName(String sobrenome){
+            this.user.setSecondName(sobrenome);
             return this;
         }
 
@@ -113,13 +106,13 @@ public class User {
             return this;
         }
 
-        public UserBuilder setCpf(String cpf){
-            this.user.setCpf(cpf);
+        public UserBuilder setDocumentNumber(String cpf){
+            this.user.setDocumentNumber(cpf);
             return this;
         }
 
-        public UserBuilder setSenha(String senha){
-            this.user.setSenha(senha);
+        public UserBuilder setPassword(String senha){
+            this.user.setPassword(senha);
             return this;
         }
 
