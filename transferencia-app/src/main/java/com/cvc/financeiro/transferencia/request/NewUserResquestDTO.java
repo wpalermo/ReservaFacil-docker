@@ -13,10 +13,10 @@ public class NewUserResquestDTO {
     private String password;
 
 
-    public UserDataDTO toData(NewUserResquestDTO newUser){
+    public UserDataDTO toData(){
         UserDataDTO userData = new UserDataDTO();
-        userData.setEmail(newUser.email);
-        userData.setPassword(newUser.password);
+        userData.setEmail(this.email);
+        userData.setPassword(this.password);
 
         return userData;
     }

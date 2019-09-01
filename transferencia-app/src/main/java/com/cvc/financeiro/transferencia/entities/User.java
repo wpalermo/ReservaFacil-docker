@@ -1,11 +1,20 @@
 package com.cvc.financeiro.transferencia.entities;
 
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
 @Entity
 public class User {
+
+
+    public enum UserStatus{
+        CREATED, DISABLE, DELETED
+    }
 
     @Id
     @GeneratedValue
@@ -28,6 +37,18 @@ public class User {
 
     @Column
     private String password;
+
+    @Column
+    @Enumerated(EnumType.STRING)
+    private UserStatus status;
+
+    @Column
+    @CreatedDate
+    private LocalDateTime createdAt;
+
+    @Column
+    @LastModifiedDate
+    private LocalDateTime modifiedAt;
 
     public String getUuid() {
         return uuid;
@@ -77,6 +98,14 @@ public class User {
         this.password = password;
     }
 
+    public UserStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(UserStatus status) {
+        this.status = status;
+    }
+
     @Transient
     public static UserBuilder builder(){
         return new UserBuilder();
@@ -113,6 +142,11 @@ public class User {
 
         public UserBuilder setPassword(String senha){
             this.user.setPassword(senha);
+            return this;
+        }
+
+        public UserBuilder setStatus(UserStatus status){
+            this.user.setStatus(status);
             return this;
         }
 

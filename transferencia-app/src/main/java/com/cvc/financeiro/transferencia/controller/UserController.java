@@ -3,7 +3,9 @@ package com.cvc.financeiro.transferencia.controller;
 import com.cvc.financeiro.transferencia.exception.TaxaException;
 import com.cvc.financeiro.transferencia.exception.TransferenciaException;
 import com.cvc.financeiro.transferencia.request.LoginRequestDTO;
+import com.cvc.financeiro.transferencia.request.NewUserResquestDTO;
 import com.cvc.financeiro.transferencia.request.UserRequestDTO;
+import com.cvc.financeiro.transferencia.response.NewUserResponseDTO;
 import com.cvc.financeiro.transferencia.response.TransferenciaResponse;
 import com.cvc.financeiro.transferencia.response.UserResponseDTO;
 import com.cvc.financeiro.transferencia.service.UserService;
@@ -33,9 +35,8 @@ public class UserController {
     @RequestMapping(value = "/new", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.OK)
     @ResponseBody
-    public ResponseEntity<UserResponseDTO> newUser(@RequestBody UserRequestDTO request) {
-        this.userService.createUser(request.toData());
-        return null;
+    public NewUserResponseDTO newUser(@RequestBody NewUserResquestDTO request) {
+        return new NewUserResponseDTO(this.userService.createUser(request.toData()));
     }
 
 }

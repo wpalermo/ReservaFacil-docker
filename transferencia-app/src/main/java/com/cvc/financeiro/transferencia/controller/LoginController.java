@@ -19,7 +19,7 @@ public class LoginController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.OK)
     @ResponseBody
-    public ResponseEntity<TransferenciaResponse> post(LoginRequestDTO request) {
+    public ResponseEntity<TransferenciaResponse> post(@RequestBody LoginRequestDTO request) {
         try {
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (TaxaException | TransferenciaException te) {
