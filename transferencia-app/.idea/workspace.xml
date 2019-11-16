@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4b3b067-5ad5-4e32-8612-15e76c1882a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/response/NewUserResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/response/LoginResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/JWTLoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/JWTLoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/JWTAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/JWTAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/exception/SystemAuthException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/exception/SystemAuthException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/exception/TaxaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/exception/TaxaException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/request/LoginRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/request/LoginRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/request/NewUserResquestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/request/NewUserResquestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/response/UserResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/response/UserResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/service/auth/impl/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/service/auth/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,64 +112,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/TokenAuthenticationService.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/JWTLoginFilter.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/controller/ContaController.java</url>
           <line>49</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/JWTAuthenticationFilter.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/TokenAuthenticationService.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/JWTLoginFilter.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/JWTLoginFilter.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/JWTLoginFilter.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="11" />
+          <line>28</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/service/auth/impl/UserDetailsServiceImpl.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/JWTLoginFilter.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/WebSecurityConfig.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/WebSecurityConfig.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="23" />
+          <line>22</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/controller/LoginController.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="28" />
+          <line>25</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cvc/financeiro/transferencia/config/security/JWTLoginFilter.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
